@@ -197,6 +197,7 @@ class a {
 
 let app = document.querySelector("#app");
 // Create a new "Text Interface"
-let ti = new a(app, "Example Text Interface");
+let ti = new a(app, "Which Spongebob Character Are You?");
 let name = await ti.prompt("What is your name?");
 ti.output("Hello, " + name);
+await ti.prompt("Do you believe that money buys happiness?");
