@@ -9,17 +9,32 @@ ti.output("Hello, " + name);
 let gender = await ti.prompt("Are you a boy or girl?");
 if (gender === "boy") {
   let isDriver = await ti.prompt("Do you have a driver's license?") 
-if ("no" == isDriver) {
-} let isMoney = await ti.output("Do you think that money buys happiness?") 
-{
-
-}
-
-
-  
-
- 
+} else {
   let isRelaxing = await ti.prompt("Do you value relaxing more than working?")
 }
+// If the person is a boy, we ask if they have a driver's license
+// If the person is a girl, we ask if they value relaxing more than working
+if (isDriver === "no") {
+} let isMoney = await ti.prompt("Do you think that money buys happiness?") 
+if (isDriver === "yes") {
+  let exercise = await ti.prompt("Do you love exercising?")
+}
+
+
+
+// If the person says no to having a drivers license, they get asked if money buys happiness
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
