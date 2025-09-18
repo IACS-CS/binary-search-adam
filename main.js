@@ -7,6 +7,9 @@ let ti = new TextInterface(app, "Which Spongebob Character Are You?");
 let name = await ti.prompt("What is your name?");
 ti.output("Hello, " + name);
 let gender = await ti.prompt("Are you a boy or girl?");
+let isDriver
+let exercise
+let money
 if (gender === "boy") {
   let isDriver = await ti.prompt("Do you have a driver's license?") 
 } else {
@@ -15,8 +18,8 @@ if (gender === "boy") {
 // If the person is a boy, we ask if they have a driver's license
 // If the person is a girl, we ask if they value relaxing more than working
 if (isDriver === "no") {
-} let isMoney = await ti.prompt("Do you think that money buys happiness?") 
-if (isDriver === "yes") {
+  let money = await ti.prompt("Do you think that money buys happiness?") 
+} else {
   let exercise = await ti.prompt("Do you love exercising?")
 }
 
