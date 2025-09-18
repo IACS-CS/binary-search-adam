@@ -208,8 +208,7 @@ if (gender === "boy") {
 }
 // If the person is a boy, we ask if they have a driver's license
 // If the person is a girl, we ask if they value relaxing more than working
-if (isDriver === "no") ; await ti.prompt("Do you think that money buys happiness?"); 
-if (isDriver === "yes") {
+{
   await ti.prompt("Do you love exercising?");
 }
 
