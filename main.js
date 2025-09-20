@@ -11,35 +11,35 @@ let isDriver
 let exercise
 let isMoney
 // All of the code in this side are if the person answers they are a boy
-if (gender.toLowerCase().trim() === "boy") {
+if (gender === "boy") {
   isDriver = await ti.prompt("Do you have a driver's license?") 
 } else {
   isRelaxing = await ti.prompt("Do you value relaxing more than working?")
 }
 // If the person is a boy, we ask if they have a driver's license
 // If the person is a girl, we ask if they value relaxing more than working
-if (isDriver.toLowerCase().trim() === "no") {
+if (isDriver === "no") {
   isMoney = await ti.prompt("Do you think that money buys happiness?") 
-} else if (isDriver.toLowerCase().trim() === "yes") {
+} else if (isDriver === "yes") {
   exercise = await ti.prompt("Do you love exercising?")
 }
 // If the person says no to having a drivers license, they get asked if money buys happiness
 // If the person says yes to having a drivers license, they get asked if they love exercising
-if (exercise.toLowerCase().trim() === "no") { 
+if (exercise === "no") { 
   ti.showImage("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Squidward_Tentacles.svg/165px-Squidward_Tentacles.svg.png")
   ti.output("Congratulations, you are Squidward!")
-} else if (exercise.toLowerCase().trim() === "yes") {
+} else if (exercise === "yes") {
   ti.showImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1irWxmlPg6fQbncxh0V3wyTSf1qnJNUm2lLHz47DsMv4xu6tkWJPqIk6rGg&s")
   ti.output("Congratulations, you are Larry The Lobster!")
 }
 // If the person says yes to if they love exercising they will be told they are Larry The Lobster
 // The following code below is about if the person likes money
-if (isMoney.toLowerCase().trim() === "yes") {
+if (isMoney === "yes") {
   ti.showImage("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_taIyVUbAyo9qqw24qPF92McMpm_EH97TT2w0OyOd1oqt1hTIqkwfeuheL5UANYFqiu4wbJaLPIMJhgBDNCSOQ0XeffPo-98DjfKOkM5GCw")
   ti.output("Congratulations, you are Plankton")
-} else if (isMoney.toLowerCase().trim() === "no") {
+} else if (isMoney === "no") {
   ti.showImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMRPvTmlcGwM7NL4HwWG88MJdatDChBztd0tCMxQxvbwSVraluk6Mwc7A&s")
-  ti.output("Congratulations, you are Spongebob Squarepants")
+  ti.output("Congratulations, you are Spongebob Squarepants!")
 }
 
 
